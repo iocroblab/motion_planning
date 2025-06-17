@@ -1,0 +1,6 @@
+[submodule "kautham"]
+	path = kautham
+	url = git@github.com:iocroblab/kautham.git
+[submodule "kautham_ros"]
+	path = kautham_ros
+	url = git@github.com:iocroblab/kautham_ros.git
