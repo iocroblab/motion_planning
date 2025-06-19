@@ -90,19 +90,19 @@ Depending on the constraint type, include additional elements such as:
 
 ## 3. Using the Kautham GUI
 
-1. Set Up Paths:
+1. *Set Up Paths*:
 In the Kautham GUI, edit the "Default Path" to specify where your robot and obstacle models are located.
 
-2. Load the XML Problem:
+2. *Load the XML Problem*:
 Open your XML problem file in the GUI.
 
-3. Configure the Planner:
+3. *Configure the Planner*:
 Go to the "OMPL Constr Planner" tab and adjust planner parameters as needed.
 
-4. Plan the Path:
+4. *Plan the Path*:
 Click the "Get Path" button to compute the robot’s motion plan.
 
-5. Visualize the Path:
+5. *Visualize the Path*:
 Use the "Start Move" button to visualize the planned motion.
 
 ### An example
