@@ -1,11 +1,15 @@
-# motion_planning
-Metarepo with the kautham motion planning framework and the kautham_ros wrapping package to integrate it within ROS 2.
+# Motion Planning with Constraints
 
+This *metarepo* has been prepared to illustrate the work done within workpackage 5.2 of the [SMARTHANDLE](https://smarthandle-project.eu/) project regarding the motion planning for a robot arm considering task constraints.
 
-# Using Kautham with Constraints: Generic Guide
+It contains two repositories:
+
+- The [kautham](https://sir.upc.edu/projects/kautham_tutorials/basic/overview/overview.html) motion planning framework,
+- The **kautham_ros** wrapping package to integrate **kautham** within ROS 2.
 
 This README provides a generic overview for defining and using constraints in Kautham problem files. It covers the required XML structure, constraint specification, and workflow for planning and visualization using the Kautham GUI.
 
+A detailed description of this contribution is described in the paper [Motion planning with constraints for a safe human-robot interaction](docs/constraint_motion_planning_paper.pdf) by P. Ramon-Canyameres, I. Zaplana and J. Rosell, accepted to the 2025 Workshop on Empowering Industry 5.0: Adaptive Planning, Learning, and Control in Human-Robot Collaboration within the 30th IEEE International Conference on Emerging Technologies and Factory Automation.
 
 ## 1. Problem File Structure Overview
 
