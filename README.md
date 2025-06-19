@@ -98,7 +98,7 @@ Use the "Start Move" button to visualize the planned motion.
 Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
 
 <p align="center">
-  <img src="docs/red-obstacle.png)" width="500"/>
+  <img src="docs/red-obstacle.png" width="500"/>
   <br>
   <em>Figure 1. Obstacle avoidance example with an orientation constraint.</em>
 </p>
@@ -114,7 +114,7 @@ Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MA
 ### An example
 
 <p align="center">
-  <img src="docs/peg-in-hole.png)" width="500"/>
+  <img src="docs/peg-in-hole.png" width="500"/>
   <br>
   <em>Figure 2. Peg-in-hole example with an orientation constraint with adaptive tolerance.</em>
 </p>
