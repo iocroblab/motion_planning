@@ -1,6 +1,6 @@
 # Motion Planning with Constraints
 
-This *metarepo* has been prepared to illustrate the work done within workpackage 5.2 of the [SMARTHANDLE](https://smarthandle-project.eu/) project regarding the motion planning for a robot arm considering task constraints.
+This *metarepo* has been prepared to illustrate the work done in the [SMARTHANDLE](https://smarthandle-project.eu/) project within *Task 5.2: Product based single and multi-arm robot motion planning* regarding the motion planning for a robot arm considering task constraints, as part of deliverable *D5.2 SMARTHANDLE reasoning enablers*.
 
 It contains two repositories:
 
