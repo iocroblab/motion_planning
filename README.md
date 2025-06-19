@@ -76,7 +76,7 @@ Depending on the constraint type, include additional elements such as:
 <Origin xyz="..." rpy="..."/>
 ```
 
-## 3. Using Constraints in the Kautham GUI
+## 3. Using the Kautham GUI
 
 1. Set Up Paths:
 In the Kautham GUI, edit the "Default Path" to specify where your robot and obstacle models are located.
@@ -93,9 +93,24 @@ Click the "Get Path" button to compute the robot’s motion plan.
 5. Visualize the Path:
 Use the "Start Move" button to visualize the planned motion.
 
-## 4. Using Constraints with the Kautham_ros interface
+### An example
 
-![Motion planning example with an orientation cosntraint with adaptive tolerance](docs/peg-in-hole.png)
+Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
+
+![Obstacle avoidance example with an orientation constraint](docs/red-obstacle)
+
+
+## 4. Using the Kautham_ros interface and the visualization in Rviz
+
+1. 11111
+
+2. 22222
+
+3. 33333
+
+### An example
+
+![Peg-in-hole example with an orientation constraint with adaptive tolerance](docs/peg-in-hole.png)
 
 ## 4. Tips for Defining Constraints
 
