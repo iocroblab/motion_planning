@@ -4,8 +4,8 @@ This *metarepo* has been prepared to illustrate the work done in the [SMARTHANDL
 
 It contains two repositories:
 
-- The [kautham](https://sir.upc.edu/projects/kautham_tutorials/basic/overview/overview.html) motion planning framework,
-- The **kautham_ros** wrapping package to integrate **kautham** within ROS 2.
+- The [kautham](https://github.com/iocroblab/kautham) motion planning framework,
+- The [kautham_ros](https://github.com/iocroblab/kautham_ros) wrapping package to integrate **kautham** within ROS 2.
 
 This README provides a generic overview for defining and using constraints in Kautham problem files. It covers the required XML structure, constraint specification, and workflow for planning and visualization using the Kautham GUI.
 
