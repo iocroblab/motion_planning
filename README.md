@@ -93,6 +93,10 @@ Click the "Get Path" button to compute the robot’s motion plan.
 5. Visualize the Path:
 Use the "Start Move" button to visualize the planned motion.
 
+## 4. Using Constraints with the Kautham_ros interface
+
+![Motion planning example with an orientation cosntraint with adaptive tolerance](docs/figures/peg-in-hole.png)
+
 ## 4. Tips for Defining Constraints
 
 - Reference correct links and joints as defined in your robot's URDF.
