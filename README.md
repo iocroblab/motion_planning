@@ -9,7 +9,19 @@ It contains two repositories:
 
 This README provides a generic overview for defining and using constraints in Kautham problem files. It covers the required XML structure, constraint specification, and workflow for planning and visualization using the Kautham GUI.
 
+
+- [1. Problem File Structure Overview](#1.-Problem-file-structure-overview)
+- [2. Defining Constraints](#2.-defining-constraints)
+- [3. Using the Kautham GUI](#3.-using-the-kautham--gui)
+- [4. Using the Kautham_ros interface and the visualization in Rviz](#4.-using-the-kautham_ros-interface-and-the-visualization-in-rviz)
+- [5. Tips for Defining Constraints](#5.-tips-for-defining-constraints)
+
+
+
 A detailed description of this contribution is described in the paper [Motion planning with constraints for a safe human-robot interaction](docs/constraint_motion_planning_paper.pdf) by P. Ramon-Canyameres, I. Zaplana and J. Rosell, accepted to the 2025 Workshop on Empowering Industry 5.0: Adaptive Planning, Learning, and Control in Human-Robot Collaboration within the 30th IEEE International Conference on Emerging Technologies and Factory Automation.
+
+
+
 
 ## 1. Problem File Structure Overview
 
@@ -119,7 +131,7 @@ Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MA
   <em>Figure 2. Peg-in-hole example with an orientation constraint with adaptive tolerance.</em>
 </p>
 
-## 4. Tips for Defining Constraints
+## 5. Tips for Defining Constraints
 
 - Reference correct links and joints as defined in your robot's URDF.
 
