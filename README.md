@@ -95,7 +95,7 @@ Use the "Start Move" button to visualize the planned motion.
 
 ## 4. Using Constraints with the Kautham_ros interface
 
-![Motion planning example with an orientation cosntraint with adaptive tolerance](docs/figures/peg-in-hole.png)
+![Motion planning example with an orientation cosntraint with adaptive tolerance](docs/peg-in-hole.png)
 
 ## 4. Tips for Defining Constraints
 
