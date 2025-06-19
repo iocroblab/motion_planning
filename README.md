@@ -97,7 +97,7 @@ Use the "Start Move" button to visualize the planned motion.
 
 Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
 
-![Obstacle avoidance example with an orientation constraint](docs/red-obstacle)
+![Obstacle avoidance example with an orientation constraint](docs/red-obstacle.png)
 
 
 ## 4. Using the Kautham_ros interface and the visualization in Rviz
