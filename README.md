@@ -97,8 +97,11 @@ Use the "Start Move" button to visualize the planned motion.
 
 Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
 
-![Obstacle avoidance example with an orientation constraint](docs/red-obstacle.png)
-
+<p align="center">
+  <img src="docs/red-obstacle.png)" width="500"/>
+  <br>
+  <em>Figure 1. Obstacle avoidance example with an orientation constraint.</em>
+</p>
 
 ## 4. Using the Kautham_ros interface and the visualization in Rviz
 
@@ -110,7 +113,11 @@ Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MA
 
 ### An example
 
-![Peg-in-hole example with an orientation constraint with adaptive tolerance](docs/peg-in-hole.png)
+<p align="center">
+  <img src="docs/peg-in-hole.png)" width="500"/>
+  <br>
+  <em>Figure 2. Peg-in-hole example with an orientation constraint with adaptive tolerance.</em>
+</p>
 
 ## 4. Tips for Defining Constraints
 
