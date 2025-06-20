@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<robot name="cylinder">
+
+	<!-- Define the brown (carton-like) color material -->
+	<material name="carton_brown">
+		<color rgba="0.59 0.29 0.0 1.0"/>
+	</material>
+
+	<link name="base">
+		<visual>
+			<origin xyz="0 0 0.0925" rpy="0 0 0" />
+			<geometry>
+				<cylinder length="0.185" radius="0.030"/>
+			</geometry>
+			<material name="carton_brown"/>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0.0925" rpy="0 0 0" />
+			<geometry>
+				<cylinder length="0.185" radius="0.030"/>
+			</geometry>
+			<material name="carton_brown"/>
+		</collision>
+	</link>
+</robot>

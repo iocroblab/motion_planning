@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<Problem name="handover">
+
+	<Robot robot="./madar_dual_manipulator.urdf">
+		<KauthamName name="madar" />
+		<Home TH="1.0" WZ="0.0" WY="0.0" WX="0.0" Z="0.0" Y="0.0" X="0.0" />
+		<Limits name="X" min="-5.0" max="5.0" />
+		<Limits name="Y" min="-5.0" max="5.0" />
+
+		<Constraint id="ori_arm_left" type="arm_orientation">
+			<Enabled status="true"/>
+			<TargetLink name="left_hand_base_link"/>
+			<FreeMovementAxes x="false" y="true" z="false"/>
+			<TargetOrientation qx="-0.7071" qy="0.0" qz="0.0" qw="0.7071"/>
+			<Tolerance value="0.1" variable="false" gradient="0.0"/>
+			<Joint name="left_shoulder_link" />
+			<Joint name="left_upper_arm_link" />
+			<Joint name="left_fore_arm_link" />
+			<Joint name="left_wrist_1_link" />
+			<Joint name="left_wrist_2_link" />
+			<Joint name="left_wrist_3_link" />
+		</Constraint>
+
+		<!-- Must be aligned according to the queries (automatic with the real robot)-->
+		<Constraint id="cone_arm_left" type="cone">
+			<Enabled status="false"/>
+			<AllowedVolumeRegion name="Inner"/>
+			<TargetLink name="left_hand_base_link"/>
+			<GeometricParams radius="0.5" height="1.3"/>
+			<ReferenceFrame entity="coke_can_aruco_401" link="base"/>
+			<Origin xyz="0.050 -0.160 0.010" rpy="0.0 0.0 0.0"/>
+			<Joint name="left_shoulder_link" />
+			<Joint name="left_upper_arm_link" />
+			<Joint name="left_fore_arm_link" />
+			<Joint name="left_wrist_1_link" />
+			<Joint name="left_wrist_2_link" />
+			<Joint name="left_wrist_3_link" />
+		</Constraint>
+
+	</Robot>
+
+	<!-- BEGIN: OBSTACLES -->
+	<Obstacle obstacle="./ioclab/ioclab_table_995_1195_765.urdf" scale="1.0">
+		<Home TH="1.5708" WX="0.0" WY="0.0" WZ="1.0" X="-0.9" Y="0.0" Z="-0.05" />
+		<KauthamName name="table" />
+	</Obstacle>
+	<Obstacle obstacle="./misc/rollup.urdf" scale="1.0">
+		<Home TH="1.57" WX="0.0" WY="0.0" WZ="0.0" X="-0.6" Y="1.0" Z="1.0" />
+		<KauthamName name="rollup" />
+	</Obstacle>
+	<Obstacle obstacle="./misc/coke_can/coke_can.urdf" scale="1.0">
+		<Home TH="1.5708" WX="0.0" WY="0.0" WZ="-1.0" X="-0.230" Y="0.755" Z="1.300" />
+		<KauthamName name="coke_can_aruco_401" />
+	</Obstacle>
+	<Obstacle obstacle="./humans/male_to_holding_object/male_to_holding_object.urdf" scale="1.0">
+		<Home TH="3.1416" WX="0.0" WY="0.0" WZ="0.0" X="-0.05" Y="1.15" Z="-0.025" />
+		<KauthamName name="male_to_holding_object" />
+	</Obstacle>
+	<!-- END: OBSTACLES -->
+
+	<Controls robot="./controls/madar_arm_left.cntr" />
+	
+	<Planner>
+		<Parameters>
+			<Name>omplconstr</Name>
+			<Parameter name="_Max Planning Time">20.0</Parameter>
+			<Parameter name="_Speed Factor">1</Parameter>
+			<Parameter name="_Range">0.1</Parameter>
+			<Parameter name="_Simplify Solution">2</Parameter>
+			<Parameter name="_Incremental (0/1)">0</Parameter>
+		</Parameters>
+		<Queries>
+			<Query>
+
+				<RobotControl name="arm_left_shoulder_pan_joint" 	init="0.300" goal="0.390"/>
+				<RobotControl name="arm_left_shoulder_lift_joint" 	init="0.395" goal="0.315"/>
+				<RobotControl name="arm_left_elbow_joint"			init="0.430" goal="0.370"/>
+				<RobotControl name="arm_left_wrist_1_joint" 		init="0.470" goal="0.535"/>
+				<RobotControl name="arm_left_wrist_2_joint" 		init="0.640" goal="0.640"/>
+				<RobotControl name="arm_left_wrist_3_joint" 		init="0.585" goal="0.560"/>
+
+			</Query>
+		</Queries>
+	</Planner>
+
+</Problem>

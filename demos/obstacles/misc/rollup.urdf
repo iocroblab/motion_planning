@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="rollup">
+	<link name="base">
+		<visual>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<box size="0.10 1.0 2.0" />
+			</geometry>
+			<material name="black">
+				<color rgba="0 0 0 1" />
+			</material>
+		</visual>
+		<collision>
+			<origin xyz="0 0 0" rpy="0 0 0" />
+			<geometry>
+				<box size="0.10 1.0 2.0" />
+			</geometry>
+		</collision>
+	</link>
+</robot>

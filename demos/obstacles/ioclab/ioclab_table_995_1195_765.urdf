@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<robot name="lab_white_table_big_1">
+	<link name="base">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="1.5708 0 0" />
+            <geometry>
+                <mesh filename="ioclab_files/white_table_995_1195_765.dae" scale="1 1 1"/>
+            </geometry>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="1.5708 0 0" />
+            <geometry>
+                <mesh filename="ioclab_files/white_table_995_1195_765.dae" scale="1 1 1"/>
+            </geometry>
+        </collision>
+	</link>
+</robot>
