@@ -115,13 +115,55 @@ Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MA
   <em>Figure 1. Obstacle avoidance example with an orientation constraint.</em>
 </p>
 
-## 4. Using the Kautham_ros interface and the visualization in Rviz
 
-1. 11111
+## 4. Using the Kautham_ros Interface and Visualization in RViz
 
-2. 22222
+The Kautham ROS Node provides a powerful interface for motion planning workflows, including problem setup, obstacle manipulation, query definition, solution computation, and visualization in RViz—a 3D visualization tool for ROS. Below is a streamlined guide for typical usage.
 
-3. 33333
+1. **Open a Problem**: To open a problem file in Kautham.
+    - *Service:* `/kautham_node/OpenProblem`
+    - *Request Fields:*
+      - `problem`: Path to the `.xml` problem file.
+      - `dir`: Directory containing the problem file.
+
+2. **Modify Obstacle Poses**: To set a new pose for an obstacle.
+    - *Service:* `/kautham_node/SetObstaclePos`
+    - *Request Fields:*
+      - `obsname`: Name of the obstacle.
+      - `set_pose`: `geometry_msgs/Pose` specifying the new position and orientation.
+
+3. **Set New Queries**: To set the initial and goal configurations for the robots.
+    - *Service:* `/kautham_node/SetQueryByControlName`
+    - *Request Fields:*
+      - `control_names`: List of strings identifying the controls (e.g., joint names).
+      - `init`: List of doubles (initial values).
+      - `goal`: List of doubles (goal values).
+
+4. **Visualize the Problem and Queries in RViz**: To visualize the current problem (robots, obstacles, and queries) in RViz.
+
+    **4.1. Launch RViz Visualization**
+    - Opens RViz with the given configuration, if provided.
+    - *Service:* `/kautham_node/visualizeRVIZ`
+    - *Request Fields:*
+      - `rviz_config_file_path`: Path to your RViz configuration file.
+      - `rviz_freq`: Visualization update frequency (Hz).
+
+    **4.2. Visualize Specific Configurations (Init/Goal/Path Sample)**
+    - To visualize a specific configuration—such as the initial or goal state, or any sample from the solved path—use:
+    - *Service:* `/kautham_node/visualizeSampleRVIZ`
+    - *Request Fields:*
+      - `sample_type`: Type of sample (e.g., `"init"`, `"goal"`, or `"path"`).
+      - `sample_index`: Index of the sample (for path samples).
+
+    **Usage Example:**
+    - To display the initial configuration: set `sample_type="init"`, `sample_index=0`.
+    - To display the goal configuration: set `sample_type="goal"`, `sample_index=0`.
+    - To display a specific path sample (e.g., the 5th configuration of the solved path): set `sample_type="path"`, `sample_index=5`.
+
+    > **Note:**  
+    > This feature is especially useful for inspecting and debugging specific robot states or steps along the planned path.  
+    > You can also use this service after solving the problem to visualize any sample of the computed path.
+
 
 ### An example
 
