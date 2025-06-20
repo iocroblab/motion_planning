@@ -107,7 +107,7 @@ Use the "Start Move" button to visualize the planned motion.
 
 ### An example
 
-Load the [madar_dual_maipulator.xml](https://github.com/iocroblab/kautham/blob/9c4e2f1ac91a90605efa07d38e682978b9d46187/demos/OMPL_constr_demos/MADAR/madar_dual_manipulator.xml) problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
+Load the [madar_dual.xml](https://github.com/iocroblab/motion_planning/blob/main/demos/kautham_problem_demos/dual_arm.xml) problem file from the *demos/kautham_problem_demos* folder and solve it by pressing the *Get Path* button.
 
 <p align="center">
   <img src="docs/red-obstacle.png" width="500"/>
@@ -166,6 +166,8 @@ The Kautham ROS Node provides a powerful interface for motion planning workflows
 
 
 ### An example
+
+The example [peg_in_hole.xml](https://github.com/iocroblab/motion_planning/blob/main/demos/kautham_problem_demos/peg_in_hole.xml) from the *demos/kautham_problem_demos* folder is a peg-in-hole assembly task defined with an orientation constraint with adaptive tolerance.
 
 <p align="center">
   <img src="docs/peg-in-hole.png" width="500"/>
