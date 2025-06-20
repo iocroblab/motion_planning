@@ -107,7 +107,7 @@ Use the "Start Move" button to visualize the planned motion.
 
 ### An example
 
-Load the *madar_dual_maipulator.xml* problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
+Load the [madar_dual_maipulator.xml](https://github.com/iocroblab/kautham/blob/9c4e2f1ac91a90605efa07d38e682978b9d46187/demos/OMPL_constr_demos/MADAR/madar_dual_manipulator.xml) problem file from the *demos/OMPL_constr/MADAR* folder and solve it by pressing the *Get Path* button.
 
 <p align="center">
   <img src="docs/red-obstacle.png" width="500"/>
