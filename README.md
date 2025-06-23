@@ -169,6 +169,8 @@ The Kautham ROS Node provides a powerful interface for motion planning workflows
 
 The example [peg_in_hole.xml](https://github.com/iocroblab/motion_planning/blob/main/demos/kautham_problem_demos/peg_in_hole.xml) from the *demos/kautham_problem_demos* folder is a peg-in-hole assembly task defined with an orientation constraint with adaptive tolerance.
 
+The video in simulation and real scenario can be seen [here](docs/d5.2_constraint_motion_planning.mp4).
+
 <p align="center">
   <img src="docs/peg-in-hole.png" width="500"/>
   <br>
